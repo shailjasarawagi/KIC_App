@@ -10,6 +10,7 @@ const ProgramSelectionScreen = ({ navigation, route }) => {
    description: 'Description for Program 1',
    daysPerWeek: 3,
    activityIds: ['activityId1', 'activityId2'],
+
   },
   {
    _id: '2',
@@ -27,6 +28,8 @@ const ProgramSelectionScreen = ({ navigation, route }) => {
 
   },
  ];
+
+
 
  const handleSelectProgram = (program) => {
   navigation.navigate('ProgramDetails', { program: program })

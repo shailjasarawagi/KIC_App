@@ -4,6 +4,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import ProgramDetailsScreen from '../../Screens/ProgramDetailsScreen';
 import PlannerScreen from '../../Screens/PlannerScreen';
 import ProgramSelectionScreen from '../../Screens/ProgramSelection';
+import ScheduleScreen from '../../Screens/ScheduleScreen';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -31,7 +32,7 @@ const BottomTabs = props => {
    />
    <Tab.Screen
     name="Planner"
-    component={PlannerScreen}
+    component={ScheduleScreen}
     options={{
      tabBarLabel: <Text  >Planner</Text>
     }}
